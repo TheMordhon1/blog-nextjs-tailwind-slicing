@@ -59,7 +59,7 @@ export default function Home() {
                       <li>
                         <a
                           href="#"
-                          className="flex py-3 px-6 border-b border-white/5 hover:bg-gray-500"
+                          className="flex py-3 px-6 border-b border-white/5 hover:bg-gray-700/80 transition-all"
                         >
                           Internet
                         </a>
@@ -67,7 +67,7 @@ export default function Home() {
                       <li>
                         <a
                           href="#"
-                          className="flex py-3 px-6 border-b border-white/5 hover:bg-gray-500"
+                          className="flex py-3 px-6 border-b border-white/5 hover:bg-gray-700/80 transition-all"
                         >
                           Book
                         </a>
@@ -75,7 +75,7 @@ export default function Home() {
                       <li>
                         <a
                           href="#"
-                          className="flex py-3 px-6 hover:bg-gray-500"
+                          className="flex py-3 px-6 hover:bg-gray-700/80 transition-all"
                         >
                           Open Source
                         </a>
@@ -88,7 +88,7 @@ export default function Home() {
             <div className="w-2/12">
               <input
                 type="text"
-                className="bg-gray-700 py-4 px-6 w-full p-3 rounded-full bg-search pl-12"
+                className="bg-gray-700 hover:bg-gray-800/80 transition-all py-4 px-6 w-full p-3 rounded-full bg-search pl-12"
                 placeholder="Search..."
               />
             </div>
