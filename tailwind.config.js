@@ -6,6 +6,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1028px",
+        xl: "1040px",
+      },
+    },
     extend: {
       fontFamily: {
         sans: ["Patrick Hand", "Arial", "sans-serif"],
