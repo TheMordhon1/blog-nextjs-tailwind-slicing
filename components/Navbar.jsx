@@ -83,7 +83,7 @@ export default function Navbar() {
           <div className="w-2/12">
             <input
               type="text"
-              className="bg-gray-700 hover:bg-gray-800/80 transition-all py-4 px-6 w-full p-3 rounded-full bg-search pl-12"
+              className="bg-gray-700 hover:bg-gray-800/80 transition-all py-4 px-6 w-full p-3 rounded-full bg-search pl-12 outline-none focus:bg-gray-800/80"
               placeholder="Search..."
             />
           </div>
