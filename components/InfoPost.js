@@ -14,13 +14,13 @@ export default ({
         <span>&bull;</span>
         <div className="">{date}</div>
       </div>
-      <h2 className="text-2xl text-white mt-6 w-11/12">{title}</h2>
+      <h2 className="text-2xl text-white mt-5 w-11/12">{title}</h2>
       <p className="mt-6 w-10/12">{shortDescription}</p>
 
-      <div className="flex items-center mt-6 space-x-3">
+      <div className="flex items-center mt-5 space-x-3">
         <img
           src={authorAvatar}
-          alt="author1"
+          alt={authorName}
           className="h-14 w-14 rounded-full object-cover"
         />
         <div className="flex flex-col gap-1">

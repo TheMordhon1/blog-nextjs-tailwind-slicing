@@ -10,14 +10,14 @@ export default function Navbar() {
 
   return (
     <nav className="py-10">
-      <div className="flex items-center">
+      <div className="flex items-center justify-between">
         <div className="w-2/12 flex items-center gap-4">
           <div className="w-10 h-10 bg-gray-500 rounded flex items-center justify-center shadow-2xl">
             LS
           </div>{" "}
           Librarus
         </div>
-        <div className="w-8/12">
+        <div className="md:6/12 lg:w-7/12">
           <ul className="flex space-x-10">
             <li>
               <a href="" className="hover:underline">
@@ -79,7 +79,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="w-2/12">
+        <div className="md:w-2/12 lg:w-3/12 float-right">
           <input
             type="text"
             className="bg-gray-700 hover:bg-gray-800/80 transition-all py-4 px-6 w-full p-3 rounded-full bg-search pl-12 outline-none focus:bg-gray-800/80"
