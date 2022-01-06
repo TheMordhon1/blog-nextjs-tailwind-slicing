@@ -8,11 +8,12 @@ module.exports = {
   theme: {
     container: {
       screens: {
+        xxxs: "200px",
+        xxs: "300px",
         xs: "330px",
-        sm: "640px",
-        md: "768px",
+        sm: "550px",
+        md: "700px",
         lg: "1028px",
-        xl: "1040px",
       },
     },
     extend: {

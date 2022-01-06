@@ -3,7 +3,7 @@ import InfoPost from "./InfoPost";
 export default function FeaturedPost() {
   return (
     <article>
-      <div className="flex gap-7 items-center flex-col md:flex-row">
+      <div className="flex gap-7 items-start lg:items-center flex-col md:flex-row">
         <div className="overflow-hidden rounded-xl w-full object-fit md:w-8/12">
           <img src="/img/thumbnail-1.png" alt="" />
         </div>
@@ -19,6 +19,7 @@ export default function FeaturedPost() {
           />
         </div>
       </div>
+      <hr className="border-white/10 mt-10 md:hidden" />
     </article>
   );
 }
