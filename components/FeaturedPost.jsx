@@ -3,11 +3,11 @@ import InfoPost from "./InfoPost";
 export default function FeaturedPost() {
   return (
     <article>
-      <div className="flex gap-7 items-center">
-        <div className="overflow-hidden rounded-xl w-8/12">
+      <div className="flex gap-7 items-center flex-col md:flex-row">
+        <div className="overflow-hidden rounded-xl w-full object-fit md:w-8/12">
           <img src="/img/thumbnail-1.png" alt="" />
         </div>
-        <div className="w-4/12 text-white/60">
+        <div className="w-full md:w-4/12 text-white/60">
           <InfoPost
             category="ui design"
             date="July 2, 2021"
