@@ -3,6 +3,7 @@ import { useState } from "react";
 import FeaturedPost from "@components/FeaturedPost";
 import CardPost from "@components/CardPost";
 import Layout from "@components/Layout";
+/* Data Static */
 import mockpost from "../utils/mockpost.json";
 
 export default function Home() {
