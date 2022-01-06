@@ -104,11 +104,10 @@ export default function Navbar() {
                       key={text}
                       className="border-b border-white/5 last:border-0"
                     >
-                      <Link
-                        href={href}
-                        className="flex py-3 px-6 hover:bg-gray-700/50 transition-all"
-                      >
-                        {text}
+                      <Link href={href}>
+                        <span className="flex py-3 px-6 hover:bg-gray-700/50 transition-all cursor-pointer">
+                          {text}
+                        </span>
                       </Link>
                     </li>
                   ))}
