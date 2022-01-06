@@ -41,9 +41,9 @@ export default function Navbar() {
           </button>
         </div>
         <div
-          className={`fixed bg-gradient-to-b from-gray-600 to-gray-900 w-full top-0 transition-all ${
-            offCanvas ? "left-0" : "-left-full"
-          } h-screen p-10 lg:relative lg:w-7/12`}
+          className={`fixed lg:relative bg-gradient-to-b from-gray-600 to-gray-900 lg:bg-none  top-0 transition-all ${
+            offCanvas ? "left-0" : "-left-full lg:left-0"
+          } h-screen lg:h-auto lg:static p-10 lg:p-0  w-full lg:w-7/12`}
         >
           <div className="absolute right-5 top-8">
             <button
@@ -51,10 +51,10 @@ export default function Navbar() {
                 setOffCanvas(false);
               }}
             >
-              <MdOutlineClose className="h-8 w-8 md:h-11 md:w-11 text-white" />
+              <MdOutlineClose className="h-8 w-8 md:h-11 md:w-11 text-white lg:hidden" />
             </button>
           </div>
-          <ul className="flex lg:space-x-10 flex-col lg:flex-row text-left space-y-10">
+          <ul className="flex lg:space-x-10 flex-col lg:flex-row text-left space-y-10 lg:space-y-0 lg:items-center">
             <li>
               <a href="" className="hover:underline">
                 UI/UX
@@ -116,13 +116,13 @@ export default function Navbar() {
           </ul>
         </div>
         <div
-          className={`lg:block lg:w-3/12 absolute w-full transition-all ${
+          className={`lg:static lg:w-3/12 absolute w-full transition-all ${
             searchMobile ? "top-10" : "-top-full"
           } left-0 px-7`}
         >
           <input
             type="text"
-            className="bg-gray-700 hover:bg-gray-800/80 transition-all py-4 px-6 w-full p-3 rounded-lg relative lg:rounded-full bg-search pl-12 outline-none focus:bg-gray-800"
+            className="bg-gray-700 hover:bg-gray-800 transition-all py-4 px-6 w-full p-3 rounded-lg relative lg:rounded-full bg-search pl-12 outline-none focus:bg-gray-800"
             placeholder="Search..."
           />
           <div className="absolute right-10 top-4 lg:hidden ">
