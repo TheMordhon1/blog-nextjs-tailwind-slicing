@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { HiOutlineMenuAlt2, HiOutlineSearch } from "react-icons/hi";
 import { MdOutlineClose } from "react-icons/md";
@@ -7,9 +8,9 @@ export default function Navbar() {
   const [offCanvas, setOffCanvas] = useState(false);
   const [searchMobile, setSearchMobile] = useState(false);
   const dropdownList = [
-    { text: "Internet", href: "#" },
-    { text: "Book", href: "#" },
-    { text: "Open Source", href: "#" },
+    { text: "Internet", href: "/detail" },
+    { text: "Book", href: "/detail" },
+    { text: "Open Source", href: "/detail" },
   ];
 
   return (
@@ -24,13 +25,14 @@ export default function Navbar() {
             <HiOutlineMenuAlt2 className="h-6 w-6 md:h-11 md:w-11 text-white/40 inline-block" />
           </button>
         </div>
-
-        <div className="w-6/12 lg:w-2/12 flex items-center justify-center lg:justify-start gap-4">
-          <div className="w-10 h-10 bg-gray-500 rounded flex items-center justify-center shadow-2xl">
-            LS
-          </div>{" "}
-          Librarus
-        </div>
+        <Link href="/">
+          <div className="w-6/12 lg:w-2/12 flex items-center justify-center lg:justify-start gap-4 cursor-pointer">
+            <div className="w-10 h-10 bg-gray-500 rounded flex items-center justify-center shadow-2xl">
+              LS
+            </div>{" "}
+            Librarus
+          </div>
+        </Link>
         <div className="w-3/12 lg:hidden text-right">
           <button
             onClick={() => {
@@ -56,19 +58,19 @@ export default function Navbar() {
           </div>
           <ul className="flex lg:space-x-10 flex-col lg:flex-row text-left space-y-10 lg:space-y-0 lg:items-center">
             <li>
-              <a href="" className="hover:underline">
+              <Link href="/detail" className="hover:underline">
                 UI/UX
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <Link href="/detail" className="hover:underline">
                 Front-End
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="hover:underline">
+              <Link href="/detail" className="hover:underline">
                 Back-End
-              </a>
+              </Link>
             </li>
             <li className="relative transition-all">
               <span
@@ -102,12 +104,12 @@ export default function Navbar() {
                       key={text}
                       className="border-b border-white/5 last:border-0"
                     >
-                      <a
+                      <Link
                         href={href}
                         className="flex py-3 px-6 hover:bg-gray-700/50 transition-all"
                       >
                         {text}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
