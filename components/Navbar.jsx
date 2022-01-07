@@ -8,9 +8,9 @@ export default function Navbar() {
   const [offCanvas, setOffCanvas] = useState(false);
   const [searchMobile, setSearchMobile] = useState(false);
   const dropdownList = [
-    { text: "Internet", href: "/detail" },
-    { text: "Book", href: "/detail" },
-    { text: "Open Source", href: "/detail" },
+    { text: "Internet", href: "/posts" },
+    { text: "Book", href: "/posts" },
+    { text: "Open Source", href: "/posts" },
   ];
 
   return (
@@ -58,17 +58,17 @@ export default function Navbar() {
           </div>
           <ul className="flex lg:space-x-10 flex-col lg:flex-row text-left space-y-10 lg:space-y-0 lg:items-center">
             <li>
-              <Link href="/detail" className="hover:underline">
+              <Link href="/posts" className="hover:underline">
                 UI/UX
               </Link>
             </li>
             <li>
-              <Link href="/detail" className="hover:underline">
+              <Link href="/posts" className="hover:underline">
                 Front-End
               </Link>
             </li>
             <li>
-              <Link href="/detail" className="hover:underline">
+              <Link href="/posts" className="hover:underline">
                 Back-End
               </Link>
             </li>
